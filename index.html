@@ -1111,6 +1111,22 @@
             },
             { passive: true },
         );
+        // PARA CAMBIAR EL SCROLLBEHAVIOR
+        document.addEventListener('DOMContentLoaded', () => {
+            const reduceMotion = window.matchMedia(
+                '(prefers-reduced-motion: reduce)'
+            ).matches;
+
+            if (!reduceMotion && window.location.hash) {
+                document.documentElement.style.scrollBehavior = 'auto';
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        document.documentElement.style.scrollBehavior = '';
+                    });
+                });
+            }
+        });
     </script>
 </body>
 
