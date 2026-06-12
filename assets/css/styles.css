@@ -13,6 +13,10 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+
+}
+
+html.js {
   scroll-behavior: smooth;
 }
 
@@ -2441,4 +2445,7 @@ h2.titulo-legal:not(:first-of-type) {
 
 .fecha-revision {
   font-weight: 500;
+}
+.no-js .mapa {
+  display: none;
 }
