@@ -2430,7 +2430,7 @@ h2.titulo-legal:not(:first-of-type) {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
-  background-image: url(/assets/img/check_small.svg);
+  background-image: url(../img/check_small.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
