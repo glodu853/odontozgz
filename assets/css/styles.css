@@ -169,12 +169,15 @@ h5 {
 }
 
 h1 {
-  font-size: var(--h3-sz);
-  line-height: var(--h3-lh);
-  letter-spacing: var(--h-ls);
+   font-size: var(--h5-sz);
+  line-height: var(--h5-lh);
+  letter-spacing: var(--h5-ls);
   font-weight: var(--h5-w);
+  font-family: var(--font-body);
 }
-
+h1.od-h1-hero {
+  color: var(--color-grey);
+}
 h2 {
   font-size: var(--h2-sz);
   line-height: var(--h2-lh);
@@ -1261,8 +1264,11 @@ span.texto-despegar-proyect {
 
 .od-h1-hero,
 .od-h2-hero,
-.od-parrafo-hero {
+{
   color: var(--color-white);
+}
+.od-parrafo-hero {
+  color: var(--color-light-gray);
 }
 
 @media (min-width: 976px) {
@@ -2603,7 +2609,7 @@ h3.titulo-nav-footer {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 .wrapper-enlaces-header-sup a {
@@ -2721,7 +2727,7 @@ a.icono-enlace-header-super.btn-primary {
 
 @media (max-width: 767px) {
   .hero {
-    padding-block: 2rem;
+    padding-block: 4rem;
   }
 }
 
