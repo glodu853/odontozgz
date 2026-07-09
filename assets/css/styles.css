@@ -1754,6 +1754,14 @@ svg.icon-whatsapp-fijo {
   font-family: var(--font-heading);
   text-wrap: balance;
   font-weight: var(--h2-w);
+  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+@media (min-width:1024px) {
+  .hero-subtitulo {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
