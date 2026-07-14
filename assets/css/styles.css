@@ -1161,8 +1161,8 @@ span.texto-despegar-proyect {
 .nosot-grid,
 .od-faq div.container,
 .od-cta-final div.container,
-.proceso div.container,
-.titulo-proceso {
+.proceso div.container
+{
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -1186,8 +1186,7 @@ span.texto-despegar-proyect {
   .text-present-nosot2,
   .od-faq div.container,
   .od-cta-final div.container,
-  .proceso div.container,
-  .titulo-proceso {
+  .proceso div.container {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -1251,8 +1250,7 @@ span.texto-despegar-proyect {
   .od-testimonios div.container,
   .od-casos-exito div.container,
   .od-faq div.container,
-  .od-cta-final div.container,
-  .titulo-proceso {
+  .od-cta-final div.container {
     gap: 6rem;
   }
 
@@ -2542,15 +2540,6 @@ h2.titulo-legal:not(:first-of-type) {
 .proceso-tarjeta h3 {
   margin-bottom: 1rem;
 }
-
-@media (min-width: 1024px) {
-  .titulo-proceso {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
 @media (min-width: 1024px) {
   .lista-proceso {
     padding-top: 3rem;
