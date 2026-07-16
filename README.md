@@ -44,6 +44,8 @@ Los nombres comerciales, direcciones, imágenes y demás datos utilizados tienen
 
 Las imágenes utilizadas en este sitio web han sido generadas mediante herramientas de inteligencia artificial con fines exclusivamente ilustrativos, creativos y demostrativos.
 
+Para el JavaScrip me apoyé en IA  para implementar y optimizar el código, revisando y adaptando antes de incorporarlo al proyecto.
+
 ## Autor 
 
 Gloria D.
