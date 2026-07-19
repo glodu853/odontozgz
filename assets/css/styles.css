@@ -1,4 +1,65 @@
 /* ==========================================================================
+   0. FUENTES
+   ========================================================================== */
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/poppins/poppins-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins/poppins-v24-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins/poppins-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+   /* lora-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/lora/lora-v37-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lora-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lora/lora-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* ==========================================================================
    1. RESET MODERNO (Lo que acordamos al principio)
    ========================================================================== */
 *,
@@ -390,7 +451,6 @@ header {
 }
 
 @media (min-width: 768px) {
-
   .hero,
   .cta-final,
   .od-contacto,
@@ -409,7 +469,6 @@ header {
 }
 
 @media (min-width: 1200px) {
-
   .hero,
   .od-contacto,
   .od-servicios,
@@ -506,12 +565,12 @@ a.nav-menu-principal {
   border-bottom: 1px solid var(--color-grey);
   box-shadow: 0 12px 15px -10px rgba(0, 0, 0, 0.23);
   padding: 4rem;
-  margin-top: 2.9rem;
+  margin-top: 3.1rem;
 }
 
 @media (min-width: 768px) {
   .js .nav-links.is-open {
-    margin-top: 2.6rem;
+    margin-top: 3rem;
   }
 }
 
@@ -552,7 +611,6 @@ a.nav-menu-principal {
 
 /* --- 3. ESCRITORIO (1200px) --- */
 @media (min-width: 1200px) {
-
   .js .nav-links,
   .js .nav-links.is-open {
     display: flex;
@@ -1261,7 +1319,7 @@ span.texto-despegar-proyect {
 }
 
 .od-h1-hero,
-.od-h2-hero,
+.od-h2-hero
 {
   color: var(--color-white);
 }
@@ -1451,12 +1509,12 @@ article.card-exito {
   }
 }
 
-.quote {
+/* .quote {
   width: 3em;
   height: 3em;
   transform: rotate(180deg);
   fill: var(--color-primary);
-}
+} */
 
 .testimonio-quote {
   padding: 2.5rem;
@@ -1553,13 +1611,8 @@ article.card-exito {
 }
 
 svg.icon-whatsapp-fijo {
-  fill: var(--color-white);
+  color: var(--color-white);
 }
-
-.icono-enlace-tel-movil path {
-  fill: var(--color-dark);
-}
-
 .icono-enlace-tel-movil {
   display: inline-flex;
   align-items: center;
@@ -1917,7 +1970,7 @@ iframe {
 }
 
 .icon-primary {
-  fill: var(--color-icon-primary);
+  color: var(--color-icon-primary);
   transition: fill 0.3s;
 }
 
@@ -1925,20 +1978,20 @@ iframe {
 .link-contacto:hover svg.icon-primary,
 .link-footer:hover svg.icon-primary,
 .link-footer:focus svg.icon-primary {
-  fill: var(--color-secundary);
+  color: var(--color-dark);
   transition: fill 0.3s;
 }
 
-.icon-parking {
+/* .icon-parking {
   fill: var(--color-icon-primary);
   transition: fill 0.3s;
-}
+} */
 
-.link-contacto:focus svg.icon-parking,
+/* .link-contacto:focus svg.icon-parking,
 .link-contacto:hover svg.icon-parking {
   fill: var(--color-secundary);
   stroke: var(--color-secundary);
-}
+} */
 
 .link-contacto:focus,
 .link-contacto:hover {
@@ -2163,14 +2216,6 @@ svg {
   max-width: 100%;
   height: auto;
 }
-
-.icon-valores {
-  flex-shrink: 0;
-  fill: var(--color-primary);
-  width: 1.875rem;
-  height: 1.875rem;
-}
-
 .od-contacto .lista-contacto-servicios {
   display: flex;
   flex-direction: column;
@@ -2179,6 +2224,7 @@ svg {
 @media (min-width: 1024px) {
   .od-contacto .lista-contacto-servicios {
     flex-direction: row;
+    gap: 2rem;
   }
 }
 
@@ -2235,10 +2281,10 @@ svg {
   color: #ad0000;
 }
 
-.link-contacto:hover svg.tel-urgencia,
+/* .link-contacto:hover svg.tel-urgencia,
 .link-contacto:focus svg.tel-urgencia {
   color: var(--color-secundary);
-}
+} */
 
 .wrapper-horario-urgencias {
   background: rgb(248, 248, 248);
@@ -2592,9 +2638,9 @@ h2 {
   color: var(--color-dark);
 }
 
-.footer-principal svg {
+/* .footer-principal svg {
   fill: currentColor;
-}
+} */
 
 h3.titulo-nav-footer {
   color: var(--color-dark);
@@ -2605,6 +2651,7 @@ h3.titulo-nav-footer {
   align-items: center;
   background: var(--color-white);
   border-bottom: 1px solid var(--color-icon-primary);
+  padding-block: 0.125rem;
 }
 
 .wrapper-enlaces-header-sup a.icono-enlace-header-super {
@@ -2612,7 +2659,7 @@ h3.titulo-nav-footer {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: 0rem;
+  border-radius: 0.5rem;
 }
 
 .wrapper-enlaces-header-sup a {
@@ -2631,7 +2678,7 @@ h3.titulo-nav-footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.75rem;
+  /* gap: 0.5rem; */
 }
 
 .informacion-contacto li {
@@ -2665,7 +2712,6 @@ h3.titulo-nav-footer {
   }
 
   .header-superior svg {
-    fill: var(--color-dark);
     color: var(--color-dark);
     width: 1.5rem;
     height: 1.5rem;
@@ -2682,7 +2728,7 @@ h3.titulo-nav-footer {
 }
 
 a.icono-enlace-header-super.btn-primary {
-  border-radius: 0;
+  border-radius: 0.5rem;
 }
 
 .header-superior {
@@ -2719,7 +2765,7 @@ a.icono-enlace-header-super.btn-primary {
 }
 
 .no-js .nav-links {
-  margin-top: 2.5rem;
+  margin-top: 5.5rem;
 }
 
 @media (width: 1024px) {
@@ -2733,6 +2779,12 @@ a.icono-enlace-header-super.btn-primary {
     padding-block: 4rem;
   }
 }
+@media (max-width: 767px) {
+.no-js .hero {
+    padding-block: 5rem;
+  }
+}
+
 
 .texto-financiacion {
   padding-top: 0.5rem;
@@ -2745,7 +2797,6 @@ cite {
 }
 
 svg.tel-urgencia {
-  fill: var(--color-urgencia);
   color: var(--color-urgencia);
 }
 
@@ -2780,11 +2831,11 @@ svg.icon-urgencia {
 }
 
 .enlaces-lista-header .icon-parking {
-  fill: var(--color-dark);
+  color: var(--color-dark);
 }
 
 .header-superior a.ubicacion-header svg {
-  fill: none;
+  color: var(--color-white);
 }
 
 @media (min-width: 1200px) {
@@ -2792,7 +2843,11 @@ svg.icon-urgencia {
     justify-content: space-around;
   }
 }
-
+@media (min-width:1024px){
+    .header-superior a.ubicacion-header svg {
+  color: var(--color-primary);
+}
+}
 /*NO JS LOGO DISPLAY NONE*/
 .no-js .header-principal a.logo {
   display: none;
@@ -2803,10 +2858,10 @@ svg.icon-urgencia {
     display: block;
   }
 
-  a.telefono-urgencia,
+  /* a.telefono-urgencia,
   a.direccion-map {
-    margin-left: 1.5rem;
-  }
+    margin-left: 2rem;
+  } */
 }
 
 /*PÁGINAS LEGALES*/
@@ -2827,31 +2882,121 @@ svg.icon-urgencia {
 .pagina-legal .logo-footer {
   padding: 0.5rem;
 }
-
-.od-contacto .icon-ubicacion {
-  fill: var(--color-white);
+svg.icon-ubicacion {
+  color: var(--color-primary);
 }
-
-.od-contacto .icon-ubicacion:hover,
+.servicios-adicionales li:hover svg {
+  color: var(--color-dark);
+}
+/* .od-contacto svg.icon-ubicacion:hover,
 svg.icon-ubicacion:focus {
-  fill: var(--color-hover);
-  stroke: var(--color-secundary);
-}
-a.icono-enlace-header-super.icon-sup-no-btn.telefono-urgencia {
+  color: var(--color-secundary);
+} */
+/* a.icono-enlace-header-super.icon-sup-no-btn.telefono-urgencia {
   padding-right: 0;
-}
+} */
 .hora24 {
   font-weight: 400;
-  padding-right: 0.54rem;
 }
-@media (min-width:1024px){
-  /* .hora24 {
-    padding-right: 0;
-  } */
-  .hora24::after {
-    content: ":";
-  }
-}
+
 .icon-horario {
   display: none;
+}
+.no-js .g-ubicacion,
+.no-js .informacion-contacto a.g-ubicacion {
+  display: none;
+}
+.puntos-24h {
+  display: none;
+}
+@media (min-width:1024px){
+  .puntos-24h {
+    display: inline-block;
+  }
+}
+.js .direccion-header {
+  display: none;
+}
+.no-js .horario-completo-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+
+.barra-separa1-header {
+  display: none;
+}
+@media (min-width:1200px){
+  .barra-separa1-header {
+  display: block;
+}
+}
+ .no-js .barra-separa1-header,
+ .no-js .barra-separa-header {
+    display: none;
+  }
+.no-js header {
+  border-bottom: 1px solid var(--color-white);
+}
+.no-js .descripcion {
+  font-weight: 600;
+}
+@media (min-width:600px){
+.no-js .horario-completo-header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.no-js .nav-links {
+  margin-top: 3.75rem;
+}
+}
+@media (min-width:768px){
+  .no-js .nav-links {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width:1024px){
+  .no-js .nav-links {
+    margin-top: 5rem;
+  }
+  .no-js .logo img {
+    padding-top: 3.5rem;
+  }
+}
+@media (min-width:1200px){
+  .no-js .logo img {
+    padding-top: 2.5rem;
+  }
+.no-js .barra-separa1-header {
+  display: block;
+  padding-left: 2rem;
+}
+}
+.barra-separa-hora-comple {
+  display: none;
+}
+@media (min-width:600px){
+ .no-js .barra-separa-hora-comple {
+    display:block;
+  }
+}
+.no-js .header-superior {
+  border-bottom: none ;
+}
+.no-js .horario-completo-header {
+  margin-top: 2rem;
+}
+@media (min-width:768px){
+   .no-js .horario-completo-header {
+  margin-top: 1rem;
+}
+}
+@media (min-width:1200px){
+  .no-js .horario-completo-header {
+  margin-top: unset;
+}
+}
+.descripcion {
+  font-weight: 500;
 }

@@ -22,12 +22,6 @@
     <meta name="apple-mobile-web-app-title" content="OdontoZGZ">
     <meta name="theme-color" content="#26B5D9">
     <link rel="manifest" href="site.webmanifest">
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-        rel="stylesheet">
     <link rel="preload" as="image" href="assets/img/clinica-dental-zaragoza-odontozgz-movil.webp"
         media="(max-width: 1199px)" fetchpriority="high">
 
@@ -41,18 +35,25 @@
     <header class="header-completo">
         <div class="header-superior">
             <div class="container">
-                <address class="wrapper-enlaces-header-sup datos-contacto-header-sup">
+                <div class="wrapper-enlaces-header-sup datos-contacto-header-sup">
                     <ul class="informacion-contacto">
                         <li class="horario-header" aria-label="Horario de atención: lunes a viernes de 8 hr a 20 hr">
-                            <svg class="icon-horario" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" height="24"
-                                viewBox="0 -960 960 960" width="24" fill="#05191E">
+                            <svg class="icon-horario" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                                fill="currentColor">
                                 <path
                                     d="M180-630h600v-130H180v130Zm0 0v-130 130Zm0 550q-24 0-42-18t-18-42v-620q0-24 18-42t42-18h65v-60h65v60h340v-60h65v60h65q24 0 42 18t18 42v307q-14.17-7.29-29.08-12.14Q796-470 780-473v-97H180v430h319q6 17 14 31.5T532-80H180Zm417.5-15.5Q542-151 542-229t55.5-133.5Q653-418 731-418t133.5 55.5Q920-307 920-229T864.5-95.5Q809-40 731-40T597.5-95.5ZM789.24-128 817-156l-75-75v-112h-39v126l86.24 89Z" />
-                            </svg>L-V: 8:00 a 20:00
+                            </svg>
+                            <div class="horario-completo-header"><span><span class="descripcion">L-V</span>: 8:00 a
+                                    20:00</span></div>
                         </li>
-
+                        <li aria-hidden="true"><span class="barra-separa-hora-comple"
+                                aria-hidden="true">|</span></li>
+                        <li><span class="direccion-header"><span class="descripcion">Dirección</span>: Plaza Aragón, 50004, Zaragoza</span></li>
+                        <li aria-hidden="true"><span class="barra-separa1-header">|</span></li>
                         <!-- <div class="enlaces-lista-header"> -->
-                        <li><a class="direccion-map  ubicacion-header icono-enlace-header-super icon-sup-no-btn "
+
+                        <li><a class="g-ubicacion direccion-map  ubicacion-header icono-enlace-header-super icon-sup-no-btn "
                                 href="https://maps.app.goo.gl/fbZkfuw5oKSmPvdQ9" rel="noopener noreferrer"
                                 target="_blank">
                                 <span class="sr-only">Ver
@@ -64,25 +65,27 @@
                                         d="M20 10C20 16.5 12 22 12 22C12 22 4 16.5 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
                                         stroke="black" stroke-width="2" />
                                     <circle cx="12" cy="11" r="2.5" fill="black" />
-                                </svg></a><span class="texto-enlac-head-sup">Plaza Aragón, 50004</span>
+                                </svg><span class="texto-enlac-head-sup g-ubicacion">Plaza Aragón, 50004,
+                                    Zaragoza</span></a>
                         </li>
 
-                        <li><a class="ubicacion-header icon-sup-no-btn icono-enlace-header-super"
+                        <li><a class="g-ubicacion ubicacion-header icon-sup-no-btn icono-enlace-header-super"
                                 href="https://maps.app.goo.gl/1pMywQaYtEm4NKyd7" rel="noopener noreferrer"
                                 target="_blank"
                                 aria-label="Ver ubicación del parking en Google Maps, Se abre en una nueva pestaña">
-                                <svg class="icon-parking" aria-hidden="true" focusable="false"
+                                <svg class="icon-parking" aria-hidden="true" focusable="false" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none">
+                                    <g>
                                         <path d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0" />
-                                        <path stroke="currentColor" stroke-width="2"
+                                        <path stroke="#05191e" stroke-width="2"
                                             d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0Z" />
-                                        <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
+                                        <path stroke="#05191E" stroke-linecap="square" stroke-width="2"
                                             d="M10 14v-2.8m0 0V8h3.636C14.091 8 15 8.354 15 9.6s-.91 1.6-1.364 1.6z" />
                                     </g>
                                 </svg>
-                            </a><span class="texto-enlac-head-sup">Parking</span>
+                                <span class="texto-enlac-head-sup g-ubicacion">Parking</span></a>
                         </li>
+                        <li aria-hidden="true"><span class="barra-separa-header">|</span></li>
                         <li><a class="icono-enlace-header-super icon-sup-no-btn telefono-urgencia"
                                 href="tel:+3490000000" aria-label="Teléfono de urgencias 24 horas: +34 900 000 00">
 
@@ -110,9 +113,10 @@
                                             <rect width="24" height="24" fill="white" />
                                         </clipPath>
                                     </defs>
-                                </svg><span class="hora24" aria-hidden="true">24&nbsp;horas</span>
-                            </a><span class="texto-enlac-head-sup numero-tel-urg" aria-hidden="true">+34 900 000
-                                000</span></li>
+                                </svg><span class="hora24" aria-hidden="true">24 horas<span class="puntos-24h"
+                                        aria-hidden="true">:</span></span>
+                                <span class="texto-enlac-head-sup numero-tel-urg" aria-hidden="true">+34 900 000
+                                    000</span></a></li>
                         <li><a class="icono-enlace-header-super btn-primary" href="tel:+3466666666">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24">
@@ -122,10 +126,11 @@
                                         <path fill="currentColor"
                                             d="M8.172 15.829c3.845 3.845 7.408 4.266 8.454 4.305c1.264.046 2.554-.986 3.112-2.043c-.89-1.044-2.049-1.854-3.318-2.732c-.749.748-1.672 2.138-2.901 1.64c-.699-.281-2.425-1.076-3.933-2.585S7.283 11.18 7 10.482c-.498-1.231.896-2.156 1.645-2.905c-.878-1.29-1.674-2.479-2.716-3.324c-1.072.56-2.11 1.84-2.063 3.121c.039 1.046.46 4.609 4.306 8.455m8.38 6.304c-1.44-.053-5.521-.617-9.795-4.89c-4.273-4.274-4.836-8.354-4.89-9.795c-.08-2.196 1.602-4.329 3.545-5.162a1.47 1.47 0 0 1 1.445.159c1.608 1.173 2.717 2.95 3.67 4.342A1.504 1.504 0 0 1 10.35 8.7l-1.356 1.357C9.309 10.752 9.95 11.95 11 13s2.248 1.691 2.944 2.006l1.355-1.356a1.5 1.5 0 0 1 1.918-.171c1.42.984 3.088 2.077 4.304 3.634a1.47 1.47 0 0 1 .189 1.485c-.837 1.953-2.955 3.616-5.158 3.535" />
                                     </g>
-                                </svg><span class="sr-only">Teléfono:</span>
-                            </a><span class="texto-enlac-head-sup">+34 666 666 66</span></li>
+                                </svg><span class="sr-only">Teléfono:</span><span class="texto-enlac-head-sup">+34 666
+                                    666 66</span>
+                            </a></li>
                     </ul>
-                </address>
+                </div>
             </div>
         </div>
         <div class="header-principal">
@@ -773,12 +778,13 @@
 
                                                 <span> Plaza de Aragón, 50004 Zaragoza, España </span>
                                             </div>
-                                            <a class="link-contacto" href="https://maps.app.goo.gl/fbZkfuw5oKSmPvdQ9"
-                                                target="_blank" rel="noopener noreferrer"
+                                            <a class="link-contacto g-ubicacion"
+                                                href="https://maps.app.goo.gl/fbZkfuw5oKSmPvdQ9" target="_blank"
+                                                rel="noopener noreferrer"
                                                 aria-label="Abrir ubicación en Google Maps, (se abre en una nueva pestaña)">
-                                                <svg class="icon-primary" aria-hidden="true" focusable="false"
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 -960 960 960" fill="#229FBF">
+                                                <svg fill="currentColor" class="icon-primary" aria-hidden="true"
+                                                    focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 -960 960 960">
                                                     <path
                                                         d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
                                                 </svg>
@@ -792,9 +798,9 @@
                                     <!-- Teléfono -->
                                     <li>
                                         <a class="link-contacto" href="tel:+34666666666">
-                                            <svg class="icon-primary" aria-hidden="true" focusable="false"
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
+                                            <svg fill="currentColor" class="icon-primary" aria-hidden="true"
+                                                focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24">
                                                 <g fill-rule="evenodd">
                                                     <path
                                                         d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
@@ -815,9 +821,9 @@
                                             href="https://wa.me/3466666666?text=Hola+,+me+gustaría+reservar+una+cita.%0AGracias."
                                             target="_blank" rel="noopener noreferrer"
                                             aria-label="WhatsApp, +34 666 666 66,  (se abre en una nueva ventana)">
-                                            <svg class="icon-primary" aria-hidden="true" focusable="false"
-                                                xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
-                                                viewBox="0 0 24 24">
+                                            <svg fill="currentColor" class="icon-primary" aria-hidden="true"
+                                                focusable="false" xmlns="http://www.w3.org/2000/svg" width="1.5rem"
+                                                height="1.5rem" viewBox="0 0 24 24">
                                                 <path
                                                     d="m7.254 18.494l.724.423A7.95 7.95 0 0 0 12.001 20a8 8 0 1 0-8-8a7.95 7.95 0 0 0 1.084 4.024l.422.724l-.653 2.401zM2.005 22l1.352-4.968A9.95 9.95 0 0 1 2.001 12c0-5.523 4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10a9.95 9.95 0 0 1-5.03-1.355zM8.392 7.308q.202-.014.403-.004q.081.006.162.016c.159.018.334.115.393.249q.447 1.015.868 2.04c.062.152.025.347-.093.537c-.06.097-.154.233-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268c.12.116.237.235.363.346c.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11q.093.039.191.066q.036.01.073.011a.35.35 0 0 0 .295-.142c.723-.876.79-.933.795-.933v.002a.48.48 0 0 1 .378-.127q.092.004.177.04c.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265c.004.067.01.175-.013.373c-.032.259-.11.57-.188.733a1.2 1.2 0 0 1-.21.302a2.4 2.4 0 0 1-.33.288q-.124.092-.125.09a5 5 0 0 1-.383.22a2 2 0 0 1-.833.23c-.185.01-.37.024-.556.014c-.008 0-.568-.087-.568-.087a9.45 9.45 0 0 1-3.84-2.046c-.226-.199-.436-.413-.65-.626c-.888-.885-1.561-1.84-1.97-2.742a3.5 3.5 0 0 1-.33-1.413a2.73 2.73 0 0 1 .565-1.68c.073-.094.142-.192.261-.305c.126-.12.207-.184.294-.228a1 1 0 0 1 .371-.1" />
                                             </svg>
@@ -831,9 +837,9 @@
                                     <!-- Correo Electrónico -->
                                     <li>
                                         <a class="link-contacto" href="mailto:info@odontozgz.com">
-                                            <svg class="icon-primary" aria-hidden="true" focusable="false"
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
+                                            <svg fill="currentColor" class="icon-primary" aria-hidden="true"
+                                                focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24">
                                                 <g>
                                                     <path
                                                         d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z">
@@ -880,25 +886,19 @@
                     <div class="servicios-adicionales">
                         <h3>Pensando en tu comodidad</h3>
                         <ul class="lista-contacto-servicios">
-                            <li>
+                            <li class="g-ubicacion">
                                 <a class="link-contacto" href="https://maps.app.goo.gl/1pMywQaYtEm4NKyd7"
                                     target="_blank" rel="noopener noreferrer">
-                                    <svg class="icon-ubicacion" aria-hidden="true" focusable="false"
+                                    <svg fill="currentColor" class="icon-ubicacion" aria-hidden="true" focusable="false"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#fff">
+                                        <g fill="none">
                                             <path d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0" />
-                                            <path stroke="#229fbf" stroke-width="2"
+                                            <path stroke="currentColor" stroke-width="2"
                                                 d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0Z" />
-                                            <path stroke="#229fbf" stroke-linecap="square" stroke-width="2"
+                                            <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
                                                 d="M10 14v-2.8m0 0V8h3.636C14.091 8 15 8.354 15 9.6s-.91 1.6-1.364 1.6z" />
                                         </g>
                                     </svg>
-                                    <!-- <svg class="icon-parking" aria-hidden="true" focusable="false"
-                                        xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                                        width="24">
-                                        <path
-                                            d="M600-520h60v-80h80q25 0 42.5-17.5T800-660v-40q0-25-17.5-42.5T740-760H600v240Zm60-140v-40h80v40h-80ZM520-400q-33 0-56.5-23.5T440-480v-320q0-33 23.5-56.5T520-880h320q33 0 56.5 23.5T920-800v320q0 33-23.5 56.5T840-400H720v280h-80v-280H520Zm0-80h320v-320H520v320Zm160-160ZM320-120q-17 0-28.5-11.5T280-160v-40H80v-80h240v-200H80v-80h208l-42-120H80v-80h180q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T360-120h-40ZM220-320q25 0 42.5-17.5T280-380q0-25-17.5-42.5T220-440q-25 0-42.5 17.5T160-380q0 25 17.5 42.5T220-320Z" />
-                                    </svg> -->
                                     <div>
                                         <span class="label-address">
                                             Dirección de parking gratuito:
@@ -1053,143 +1053,33 @@
             </div>
         </section>
     </footer>
-    <aside class="acciones-flotantes" aria-label="Accesos rápidos"><a class="whatsapp-fijo" href="https://wa.me/3466666666?text=Hola+,+me+gustaría+solicitar+información.%0AGracias."
-        target="_blank" rel="noopener noreferrer"
-        aria-label="Contactar con OdontoZGZ mediante WhatsApp. Se abrirá una nueva pestaña">
-        <svg class="icon-whatsapp-fijo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-            width="30" height="30" viewBox="0 0 24 24">
-            <path
-                d="m7.254 18.494l.724.423A7.95 7.95 0 0 0 12.001 20a8 8 0 1 0-8-8a7.95 7.95 0 0 0 1.084 4.024l.422.724l-.653 2.401zM2.005 22l1.352-4.968A9.95 9.95 0 0 1 2.001 12c0-5.523 4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10a9.95 9.95 0 0 1-5.03-1.355zM8.392 7.308q.202-.014.403-.004q.081.006.162.016c.159.018.334.115.393.249q.447 1.015.868 2.04c.062.152.025.347-.093.537c-.06.097-.154.233-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268c.12.116.237.235.363.346c.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11q.093.039.191.066q.036.01.073.011a.35.35 0 0 0 .295-.142c.723-.876.79-.933.795-.933v.002a.48.48 0 0 1 .378-.127q.092.004.177.04c.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265c.004.067.01.175-.013.373c-.032.259-.11.57-.188.733a1.2 1.2 0 0 1-.21.302a2.4 2.4 0 0 1-.33.288q-.124.092-.125.09a5 5 0 0 1-.383.22a2 2 0 0 1-.833.23c-.185.01-.37.024-.556.014c-.008 0-.568-.087-.568-.087a9.45 9.45 0 0 1-3.84-2.046c-.226-.199-.436-.413-.65-.626c-.888-.885-1.561-1.84-1.97-2.742a3.5 3.5 0 0 1-.33-1.413a2.73 2.73 0 0 1 .565-1.68c.073-.094.142-.192.261-.305c.126-.12.207-.184.294-.228a1 1 0 0 1 .371-.1" />
-        </svg>
-    </a>
-    <a href="#scroll-top" class="btn-volver-al-inicio-pag" aria-label="Volver al inicio de la página">
-        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-            viewBox="0 0 24 24">
-            <g fill="none" fill-rule="evenodd">
+    <aside class="acciones-flotantes" aria-label="Accesos rápidos">
+
+        <a class="whatsapp-fijo"
+            href="https://wa.me/3466666666?text=Hola+,+me+gustaría+solicitar+información.%0AGracias." target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar con OdontoZGZ mediante WhatsApp. Se abrirá una nueva pestaña">
+            <svg class="icon-whatsapp-fijo" aria-hidden="true" fill="currentColor" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path
-                    d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
-                <path fill="#05191E"
-                    d="M15.536 13.707a1 1 0 0 1-1.415 0L12 11.586l-2.121 2.121a1 1 0 0 1-1.415-1.414l2.829-2.828a1 1 0 0 1 1.414 0l2.829 2.828a1 1 0 0 1 0 1.414" />
-            </g>
-        </svg>
-    </a></aside>
+                    d="m7.254 18.494l.724.423A7.95 7.95 0 0 0 12.001 20a8 8 0 1 0-8-8a7.95 7.95 0 0 0 1.084 4.024l.422.724l-.653 2.401zM2.005 22l1.352-4.968A9.95 9.95 0 0 1 2.001 12c0-5.523 4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10a9.95 9.95 0 0 1-5.03-1.355zM8.392 7.308q.202-.014.403-.004q.081.006.162.016c.159.018.334.115.393.249q.447 1.015.868 2.04c.062.152.025.347-.093.537c-.06.097-.154.233-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268c.12.116.237.235.363.346c.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11q.093.039.191.066q.036.01.073.011a.35.35 0 0 0 .295-.142c.723-.876.79-.933.795-.933v.002a.48.48 0 0 1 .378-.127q.092.004.177.04c.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265c.004.067.01.175-.013.373c-.032.259-.11.57-.188.733a1.2 1.2 0 0 1-.21.302a2.4 2.4 0 0 1-.33.288q-.124.092-.125.09a5 5 0 0 1-.383.22a2 2 0 0 1-.833.23c-.185.01-.37.024-.556.014c-.008 0-.568-.087-.568-.087a9.45 9.45 0 0 1-3.84-2.046c-.226-.199-.436-.413-.65-.626c-.888-.885-1.561-1.84-1.97-2.742a3.5 3.5 0 0 1-.33-1.413a2.73 2.73 0 0 1 .565-1.68c.073-.094.142-.192.261-.305c.126-.12.207-.184.294-.228a1 1 0 0 1 .371-.1" />
+            </svg>
+        </a>
+        <a href="#scroll-top" class="btn-volver-al-inicio-pag" aria-label="Volver al inicio de la página">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                    <path
+                        d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                    <path fill="#05191E"
+                        d="M15.536 13.707a1 1 0 0 1-1.415 0L12 11.586l-2.121 2.121a1 1 0 0 1-1.415-1.414l2.829-2.828a1 1 0 0 1 1.414 0l2.829 2.828a1 1 0 0 1 0 1.414" />
+                </g>
+            </svg>
+        </a>
+    </aside>
     <!--WHATSAPP FIJO-->
 
-    <script>
-        // --- PARTE 1: NAVEGACIÓN Y MENÚ ---
-        const boton = document.querySelector(".menu-toggle");
-        const lista = document.querySelector("#nav-list");
-
-        // Solo si existen ambos elementos
-        if (boton && lista) {
-
-            // Abrir/Cerrar al hacer clic en el botón hamburguesa
-            boton.addEventListener("click", () => {
-                const abierto = boton.getAttribute("aria-expanded") === "true";
-                const nuevoEstado = !abierto;
-
-                boton.setAttribute("aria-expanded", String(nuevoEstado));
-                boton.setAttribute(
-                    "aria-label",
-                    nuevoEstado ? "Cerrar menú" : "Abrir menú"
-                );
-
-                lista.classList.toggle("is-open");
-            });
-
-            // Cerrar el menú al hacer clic en cualquier enlace
-            const enlacesMenu = lista.querySelectorAll("a");
-
-            enlacesMenu.forEach((enlace) => {
-                enlace.addEventListener("click", () => {
-                    lista.classList.remove("is-open");
-                    boton.setAttribute("aria-expanded", "false");
-                    boton.setAttribute("aria-label", "Abrir menú");
-                });
-            });
-
-            // NUEVO: si se pasa a escritorio desde 1200px, cerrar el menú
-            const mediaDesktop = window.matchMedia("(min-width: 1200px)");
-
-            mediaDesktop.addEventListener("change", (e) => {
-                if (e.matches) {
-                    lista.classList.remove("is-open");
-                    boton.setAttribute("aria-expanded", "false");
-                    boton.setAttribute("aria-label", "Abrir menú");
-                }
-            });
-            const selectoresEnfocables = 'a[href], button:not([disabled])';
-
-            document.addEventListener("keydown", (e) => {
-                if (!lista.classList.contains("is-open")) return;
-
-                // ESCAPE: Cierra y devuelve el foco
-                if (e.key === "Escape") {
-                    lista.classList.remove("is-open");
-                    boton.setAttribute("aria-expanded", "false");
-                    boton.setAttribute("aria-label", "Abrir menú");
-                    boton.focus();
-                    return;
-                }
-
-                // TAB: Mantiene el foco dentro del menú
-                if (e.key === "Tab") {
-                    const elementosEnfocables = lista.querySelectorAll(selectoresEnfocables);
-                    const todosLosElementos = [boton, ...elementosEnfocables];
-
-                    if (todosLosElementos.length === 0) return;
-
-                    const primerElemento = todosLosElementos[0];
-                    const ultimoElemento = todosLosElementos[todosLosElementos.length - 1];
-
-                    if (e.shiftKey) {
-                        if (document.activeElement === primerElemento) {
-                            ultimoElemento.focus();
-                            e.preventDefault();
-                        }
-                    } else {
-                        if (document.activeElement === ultimoElemento) {
-                            primerElemento.focus();
-                            e.preventDefault();
-                        }
-                    }
-                }
-            });
-        }
-        // --- PARTE 2: BOTÓN VOLVER ARRIBA ---
-        const btnVolverArriba = document.querySelector(
-            ".btn-volver-al-inicio-pag",
-        );
-
-        if (btnVolverArriba) {
-            window.addEventListener(
-                "scroll",
-                () => {
-                    if (window.scrollY > 400) {
-                        btnVolverArriba.classList.add("is-visible");
-                    } else {
-                        btnVolverArriba.classList.remove("is-visible");
-                    }
-                },
-                { passive: true }
-            );
-        }
-        // PARA CAMBIAR EL SCROLLBEHAVIOR
-        document.addEventListener("DOMContentLoaded", () => {
-            const reduceMotion = window.matchMedia(
-                "(prefers-reduced-motion: reduce)",
-            ).matches;
-
-            if (!reduceMotion && window.location.hash) {
-                document.documentElement.style.scrollBehavior = "auto";
-
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        document.documentElement.style.scrollBehavior = "";
-                    });
-                });
-            }
-        });
+    <script src="assets/js/main.js">
     </script>
 </body>
 
