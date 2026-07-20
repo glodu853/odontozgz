@@ -4,60 +4,59 @@
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-italic - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/poppins/poppins-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins/poppins-v24-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-500 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/poppins/poppins-v24-latin-500.woff2') format('woff2'); 
+  src: url("../fonts/poppins/poppins-v24-latin-500.woff2") format("woff2");
 }
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins/poppins-v24-latin-600.woff2') format('woff2'); 
+  src: url("../fonts/poppins/poppins-v24-latin-600.woff2") format("woff2");
 }
 /* poppins-700 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/poppins/poppins-v24-latin-700.woff2') format('woff2');
+  src: url("../fonts/poppins/poppins-v24-latin-700.woff2") format("woff2");
 }
-   /* lora-600 - latin */
+/* lora-600 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Lora';
+  font-display: swap;
+  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/lora/lora-v37-latin-600.woff2') format('woff2'); 
+  src: url("../fonts/lora/lora-v37-latin-600.woff2") format("woff2");
 }
 /* lora-700 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Lora';
+  font-display: swap;
+  font-family: "Lora";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/lora/lora-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/lora/lora-v37-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 /* ==========================================================================
    1. RESET MODERNO (Lo que acordamos al principio)
@@ -166,7 +165,6 @@ html {
 }
 
 @media (max-width: 1023px) {
-
   /* TABLET-TIPOGRAFIAS */
   :root {
     --h1-sz: 2.4rem;
@@ -187,7 +185,6 @@ html {
 }
 
 @media (max-width: 767px) {
-
   /* MOBILE-TIPOGRAFIAS */
   :root {
     --h1-sz: 2rem;
@@ -229,12 +226,19 @@ h5 {
   text-wrap: balance;
 }
 
-h1 {
-   font-size: var(--h4-sz);
+h1.od-h1-hero {
+  font-size: var(--h4-sz);
   line-height: var(--h4-lh);
   letter-spacing: var(--h4-ls);
   font-weight: var(--h4-w);
   font-family: var(--font-body);
+}
+h1 {
+  font-size: var(--h1-sz);
+  line-height: var(--h1-lh);
+  letter-spacing: var(--h1-ls);
+  font-weight: var(--h1-w);
+  font-family: var(--font-heading);
 }
 h1.od-h1-hero {
   color: var(--color-grey);
@@ -759,7 +763,6 @@ h2 {
 }
 
 @media (min-width: 768px) {
-
   .hero h1,
   .hero h2 {
     text-align: start;
@@ -804,7 +807,6 @@ section.cta-final div.container {
 }
 
 @media (min-width: 1024px) {
-
   .texto-inicial-cta-final,
   .text-inicial-contacto,
   .parrafo-presentacion {
@@ -858,7 +860,10 @@ section.cta-final div.container {
   }
 } */
 .no-js main {
-  margin-top: calc(var(--height-nav-links-movil) + var(--height-movil-header-principal) - var(--height-movil-header-superior-desktop) - 1.05rem);
+  margin-top: calc(
+    var(--height-nav-links-movil) + var(--height-movil-header-principal) -
+      var(--height-movil-header-superior-desktop) - 1.05rem
+  );
 }
 
 .no-js .nav-principal {
@@ -925,7 +930,10 @@ section.cta-final div.container {
   }
 
   .no-js main {
-    margin-top: calc(var(--height-nav-links-desktop) + var(--height-movil-header-principal) - var(--height-movil-header-superior-desktop));
+    margin-top: calc(
+      var(--height-nav-links-desktop) + var(--height-movil-header-principal) -
+        var(--height-movil-header-superior-desktop)
+    );
   }
 
   .no-js .header-principal {
@@ -975,7 +983,10 @@ section.contacto-footer a {
   font-weight: 400;
 }
 
-footer.footer-principal .menu-principal li.item-menu-princip-footer a.link-footer {
+footer.footer-principal
+  .menu-principal
+  li.item-menu-princip-footer
+  a.link-footer {
   min-height: 44px;
   min-width: 44px;
 }
@@ -1191,13 +1202,15 @@ span.texto-despegar-proyect {
 
 .od-section-fondo-hero {
   background-image:
-    linear-gradient(130deg,
+    linear-gradient(
+      130deg,
       rgba(0, 0, 0, 0.88) 30%,
       rgba(5, 25, 30, 0.8) 50%,
       rgba(8, 36, 43, 0.86) 60%,
       rgba(15, 72, 87, 0.8) 70%,
       rgba(23, 109, 130, 0.5) 100%,
-      rgba(255, 255, 255, 0.7) 100%),
+      rgba(255, 255, 255, 0.7) 100%
+    ),
     url(../img/clinica-dental-zaragoza-odontozgz-movil.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -1219,8 +1232,7 @@ span.texto-despegar-proyect {
 .nosot-grid,
 .od-faq div.container,
 .od-cta-final div.container,
-.proceso div.container
-{
+.proceso div.container {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -1293,10 +1305,12 @@ span.texto-despegar-proyect {
 
   .od-section-fondo-hero {
     background-image:
-      linear-gradient(120deg,
+      linear-gradient(
+        120deg,
         rgba(0, 0, 0, 0.87) 40%,
         rgba(15, 72, 87, 0.8) 55%,
-        rgba(38, 181, 217, 0) 100%),
+        rgba(38, 181, 217, 0) 100%
+      ),
       url(../img/clinica-odontozgz-zargoza.webp);
     background-size: cover;
     background-position: center;
@@ -1319,8 +1333,7 @@ span.texto-despegar-proyect {
 }
 
 .od-h1-hero,
-.od-h2-hero
-{
+.od-h2-hero {
   color: var(--color-white);
 }
 .od-parrafo-hero {
@@ -1430,7 +1443,6 @@ span.texto-despegar-proyect {
 }
 
 @media (min-width: 768px) {
-
   .grid-casos-exito,
   .grid-testimonios-exito {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1521,9 +1533,11 @@ article.card-exito {
   border-radius: 0.5rem;
   border: 1px solid var(--color-hover);
   position: relative;
-  background-image: linear-gradient(135deg,
-      rgba(212, 240, 247, 0.4) 0%,
-      rgba(233, 248, 251, 0) 100%);
+  background-image: linear-gradient(
+    135deg,
+    rgba(212, 240, 247, 0.4) 0%,
+    rgba(233, 248, 251, 0) 100%
+  );
 }
 
 .testimonio-quote .borde-decorativo {
@@ -1765,7 +1779,6 @@ svg.icon-whatsapp-fijo {
 }
 
 @media (min-width: 1200px) {
-
   .nosot-grid,
   .nosot-grid-clinic {
     display: grid;
@@ -1808,7 +1821,7 @@ svg.icon-whatsapp-fijo {
   padding-bottom: 1.5rem;
   padding-top: 2.5rem;
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .hero-subtitulo {
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -1858,27 +1871,33 @@ summary {
   line-height: var(--h6-lh);
   cursor: pointer;
   padding: 1rem;
-  background: linear-gradient(135deg,
-      rgba(212, 240, 247, 0.4) 0%,
-      rgba(233, 248, 251, 0) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 240, 247, 0.4) 0%,
+    rgba(233, 248, 251, 0) 100%
+  );
   border: 1px solid var(--color-hover);
   border-radius: 0.5rem;
 }
 
 summary:hover,
 summary:focus {
-  background: linear-gradient(294deg,
-      rgba(81, 206, 237, 0.35) 100%,
-      rgba(168, 238, 255, 0.39) 92%,
-      rgba(255, 255, 255, 1) 0%);
+  background: linear-gradient(
+    294deg,
+    rgba(81, 206, 237, 0.35) 100%,
+    rgba(168, 238, 255, 0.39) 92%,
+    rgba(255, 255, 255, 1) 0%
+  );
 }
 
 .acordeon-respuesta {
   padding: 0;
   margin-top: 0.25rem;
-  background: linear-gradient(135deg,
-      rgba(212, 240, 247, 0.4) 0%,
-      rgba(233, 248, 251, 0) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 240, 247, 0.4) 0%,
+    rgba(233, 248, 251, 0) 100%
+  );
   border: 1px solid var(--color-hover);
   border-radius: 0.5rem;
   padding: 1rem 1rem 1rem 1.5rem;
@@ -2062,7 +2081,6 @@ svg {
 }
 
 @media (min-width: 1024px) {
-
   .datos-map-contacto,
   .servicios-adic-contacto {
     gap: 4rem;
@@ -2180,15 +2198,14 @@ svg {
   width: 4.9rem;
   height: auto;
   min-width: 4.9rem;
-  
 }
-@media (min-width:360px) {
+@media (min-width: 360px) {
   .logo img {
     width: 6.5rem;
   }
 }
 
-@media (min-width:390px) {
+@media (min-width: 390px) {
   .logo img {
     width: 7.5rem;
   }
@@ -2603,7 +2620,6 @@ h2.titulo-legal:not(:first-of-type) {
   }
 }
 
-
 h2 {
   max-width: 700px;
   margin-left: auto;
@@ -2616,7 +2632,6 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
-
 
 @media (min-width: 1200px) {
   .parrafo-fin80 {
@@ -2673,7 +2688,7 @@ h3.titulo-nav-footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  /* gap: 0.5rem; */
+  gap: 0.5rem;
 }
 
 .informacion-contacto li {
@@ -2743,7 +2758,6 @@ a.icono-enlace-header-super.btn-primary {
 }
 
 @media (min-width: 1024px) {
-
   .header-superior,
   .enlaces-lista-header {
     position: unset;
@@ -2775,11 +2789,10 @@ a.icono-enlace-header-super.btn-primary {
   }
 }
 @media (max-width: 767px) {
-.no-js .hero {
+  .no-js .hero {
     padding-block: 5rem;
   }
 }
-
 
 .texto-financiacion {
   padding-top: 0.5rem;
@@ -2797,14 +2810,19 @@ svg.tel-urgencia {
 
 .informacion-contacto li {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .horario-header {
   position: absolute;
   right: 4.75rem;
-  top: 3.9rem;
+  top: 4.1rem;
+  font-weight: 500;
 }
-
+.no-js .horario-header {
+  right: 1rem;
+  top: 4.5rem;
+}
 @media (min-width: 1200px) {
   .horario-header {
     position: unset;
@@ -2838,17 +2856,17 @@ svg.icon-urgencia {
     justify-content: space-around;
   }
 }
-@media (min-width:1024px){
-    .header-superior a.ubicacion-header svg {
-  color: var(--color-primary);
-}
+@media (min-width: 1024px) {
+  .header-superior a.ubicacion-header svg {
+    color: var(--color-primary);
+  }
 }
 /*NO JS LOGO DISPLAY NONE*/
 .no-js .header-principal a.logo {
   display: none;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .no-js .header-principal a.logo {
     display: block;
   }
@@ -2860,7 +2878,7 @@ svg.icon-urgencia {
 }
 
 /*PÁGINAS LEGALES*/
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .pagina-legal .nav-footer {
     width: 30%;
   }
@@ -2886,10 +2904,17 @@ svg.icon-ubicacion {
 .hora24 {
   font-weight: 400;
 }
-
-.icon-horario {
-  display: none;
+.horario-header {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
+@media (min-width: 1200px) {
+  .icon-horario {
+    display: none;
+  }
+}
+
 .no-js .g-ubicacion,
 .no-js .informacion-contacto a.g-ubicacion {
   display: none;
@@ -2897,7 +2922,7 @@ svg.icon-ubicacion {
 .puntos-24h {
   display: none;
 }
-@media (min-width:1024px){
+@media (min-width: 1024px) {
   .puntos-24h {
     display: inline-block;
   }
@@ -2905,46 +2930,46 @@ svg.icon-ubicacion {
 .js .direccion-header {
   display: none;
 }
-.no-js .horario-completo-header {
+/* .no-js .horario-completo-header {
   display: flex;
   flex-direction: column;
   padding-left: 1.5rem;
-}
+} */
 
 .barra-separa1-header {
   display: none;
 }
-@media (min-width:1200px){
+@media (min-width: 1200px) {
   .barra-separa1-header {
-  display: block;
-}
-}
- .no-js .barra-separa1-header,
- .no-js .barra-separa-header {
-    display: none;
+    display: block;
   }
+}
+.no-js .barra-separa1-header,
+.no-js .barra-separa-header {
+  display: none;
+}
 .no-js header {
   border-bottom: 1px solid var(--color-white);
 }
-.no-js .descripcion {
+/* .no-js .descripcion {
   font-weight: 600;
-}
-@media (min-width:600px){
-.no-js .horario-completo-header {
+} */
+@media (min-width: 600px) {
+  /* .no-js .horario-completo-header {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+} */
+  .no-js .nav-links {
+    margin-top: 3.75rem;
+  }
 }
-.no-js .nav-links {
-  margin-top: 3.75rem;
-}
-}
-@media (min-width:768px){
+@media (min-width: 768px) {
   .no-js .nav-links {
     margin-top: 2.5rem;
   }
 }
-@media (min-width:1024px){
+@media (min-width: 1024px) {
   .no-js .nav-links {
     margin-top: 5rem;
   }
@@ -2952,39 +2977,53 @@ svg.icon-ubicacion {
     padding-top: 3.5rem;
   }
 }
-@media (min-width:1200px){
+@media (min-width: 1200px) {
   .no-js .logo img {
     padding-top: 2.5rem;
   }
-.no-js .barra-separa1-header {
-  display: block;
-  padding-left: 2rem;
-}
+  .no-js .barra-separa1-header {
+    display: block;
+    padding-left: 2rem;
+  }
 }
 .barra-separa-hora-comple {
   display: none;
 }
-@media (min-width:600px){
- .no-js .barra-separa-hora-comple {
-    display:block;
+@media (min-width: 1200px) {
+  .no-js .barra-separa-hora-comple {
+    display: block;
   }
 }
 .no-js .header-superior {
-  border-bottom: none ;
+  border-bottom: none;
 }
-.no-js .horario-completo-header {
+/* .no-js .horario-completo-header {
   margin-top: 2rem;
-}
-@media (min-width:768px){
+} */
+/* @media (min-width:768px){
    .no-js .horario-completo-header {
   margin-top: 1rem;
 }
-}
-@media (min-width:1200px){
-  .no-js .horario-completo-header {
+} */
+@media (min-width: 1200px) {
+  /* .no-js .horario-completo-header {
   margin-top: unset;
+} */
 }
-}
-.descripcion {
+/* .descripcion {
   font-weight: 500;
+} */
+.header-superior a.ubicacion-header:hover svg,
+.header-superior a.ubicacion-header:focus svg {
+  color: var(--color-hover);
+  transition: 0.3s ease;
+}
+.no-js .informacion-contacto .horario-header {
+  top: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .no-js .informacion-contacto .horario-header {
+    top: 4.5rem;
+  }
 }
