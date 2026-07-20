@@ -11,7 +11,7 @@
 }
 /* poppins-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Poppins';
   font-style: italic;
   font-weight: 400;
@@ -19,39 +19,39 @@
 }
 /* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/poppins/poppins-v24-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins/poppins-v24-latin-500.woff2') format('woff2'); 
 }
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins/poppins-v24-latin-600.woff2') format('woff2'); 
 }
 /* poppins-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/poppins/poppins-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins/poppins-v24-latin-700.woff2') format('woff2');
 }
    /* lora-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Lora';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/lora/lora-v37-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/lora/lora-v37-latin-600.woff2') format('woff2'); 
 }
 /* lora-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
@@ -2281,11 +2281,6 @@ svg {
   color: #ad0000;
 }
 
-/* .link-contacto:hover svg.tel-urgencia,
-.link-contacto:focus svg.tel-urgencia {
-  color: var(--color-secundary);
-} */
-
 .wrapper-horario-urgencias {
   background: rgb(248, 248, 248);
   padding: 1rem;
@@ -2888,13 +2883,6 @@ svg.icon-ubicacion {
 .servicios-adicionales li:hover svg {
   color: var(--color-dark);
 }
-/* .od-contacto svg.icon-ubicacion:hover,
-svg.icon-ubicacion:focus {
-  color: var(--color-secundary);
-} */
-/* a.icono-enlace-header-super.icon-sup-no-btn.telefono-urgencia {
-  padding-right: 0;
-} */
 .hora24 {
   font-weight: 400;
 }
