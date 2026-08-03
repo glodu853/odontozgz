@@ -1242,11 +1242,11 @@ span.texto-despegar-proyect {
   .od-parrafo-hero {
     text-align: unset;
   }
-
+/* 
   .hero-text-principal {
     justify-content: center;
     width: 70%;
-  }
+  } */
 
   .od-contacto div.container,
   .od-servicios div.container,
