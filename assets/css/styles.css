@@ -2195,9 +2195,9 @@ svg {
 }
 
 .logo img {
-  width: 4.9rem;
+  width: 6rem;
   height: auto;
-  min-width: 4.9rem;
+  min-width: 6rem;
 }
 @media (min-width: 360px) {
   .logo img {
@@ -2532,7 +2532,7 @@ h2.titulo-legal:not(:first-of-type) {
 .proceso-tarjeta {
   background: var(--color-white);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -2558,12 +2558,12 @@ h2.titulo-legal:not(:first-of-type) {
   font-weight: 700;
   color: var(--color-primary-800);
   background-color: var(--color-primary-100);
-  padding: 3.5rem 2rem 2rem 2rem;
+  padding: 2rem;
   margin: 0;
   display: flex;
   overflow: hidden;
   line-height: 0;
-  justify-content: center;
+  justify-content: start;
 }
 
 .textos-proceso {
@@ -3026,4 +3026,11 @@ svg.icon-ubicacion {
   .no-js .informacion-contacto .horario-header {
     top: 4.5rem;
   }
+}
+li.horario-header {
+  display: none;
+}
+.img1-nosotros,
+.img2-nosotros {
+  margin: 0 auto;
 }
