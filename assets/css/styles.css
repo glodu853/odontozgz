@@ -1043,7 +1043,7 @@ footer.footer-principal
 
 footer.footer-principal a:hover,
 footer.footer-principal a:focus {
-  background-color: var(--color-primary-transp);
+  /* background-color: var(--color-primary-transp); */
   text-decoration: none;
 }
 
@@ -1221,7 +1221,6 @@ span.texto-despegar-proyect {
   text-align: center;
 }
 
-/* .od-present-nosot div.container, */
 .od-contacto div.container,
 .od-servicios div.container,
 .od-casos-exito div.container,
@@ -1242,11 +1241,6 @@ span.texto-despegar-proyect {
   .od-parrafo-hero {
     text-align: unset;
   }
-/* 
-  .hero-text-principal {
-    justify-content: center;
-    width: 70%;
-  } */
 
   .od-contacto div.container,
   .od-servicios div.container,
@@ -1458,7 +1452,7 @@ span.texto-despegar-proyect {
 
 .text-antes-caso-exito,
 .text-despues-caso-exito {
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.2rem;
   position: absolute;
   background-color: var(--color-primary-transp);
   border-bottom: none;
@@ -1553,6 +1547,7 @@ article.card-exito {
   align-items: center;
   justify-content: space-between;
   padding-right: 1rem;
+  gap: 0.5rem;
 }
 
 .cta-textos {
@@ -2001,17 +1996,6 @@ iframe {
   transition: fill 0.3s;
 }
 
-/* .icon-parking {
-  fill: var(--color-icon-primary);
-  transition: fill 0.3s;
-} */
-
-/* .link-contacto:focus svg.icon-parking,
-.link-contacto:hover svg.icon-parking {
-  fill: var(--color-secundary);
-  stroke: var(--color-secundary);
-} */
-
 .link-contacto:focus,
 .link-contacto:hover {
   background-color: var(--color-hover);
@@ -2066,6 +2050,9 @@ svg {
   padding-inline: 0.5rem;
   align-items: flex-start;
   font-style: normal;
+    background: rgb(248, 248, 248);
+  padding: 1rem 1rem 1rem 0.5rem ;
+  border-radius: 0.5rem;
 }
 
 .servicios-adic-contacto {
@@ -2207,7 +2194,7 @@ svg {
 
 @media (min-width: 390px) {
   .logo img {
-    width: 7.5rem;
+    width: 8rem;
   }
 }
 
@@ -2297,13 +2284,6 @@ svg {
 .tel-urgencia {
   color: #ad0000;
 }
-
-.wrapper-horario-urgencias {
-  background: rgb(248, 248, 248);
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
 /* PÁGINAS - AVISOS LEGALES*/
 .container-legales {
   width: 100%;
@@ -2396,9 +2376,9 @@ h2.titulo-legal:not(:first-of-type) {
 }
 
 /*EVITA QUE AL ZOOM 400% TAPE EL MENÚ HAMBURGUESA*/
-@media (max-width: 767px) {
+@media (max-width: 449px) {
   .whatsapp-fijo {
-    /* display: none; */
+    display: none;
     background-color: #25d366d9;
     right: 1px;
   }
@@ -2409,9 +2389,11 @@ h2.titulo-legal:not(:first-of-type) {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .whatsapp-fijo {
     display: flex;
+     background-color: #25d366d9;
+    right: 1px;
   }
 }
 
@@ -2648,10 +2630,6 @@ h2 {
   color: var(--color-dark);
 }
 
-/* .footer-principal svg {
-  fill: currentColor;
-} */
-
 h3.titulo-nav-footer {
   color: var(--color-dark);
 }
@@ -2840,7 +2818,6 @@ svg.icon-urgencia {
 .informacion-contacto a.icon-sup-no-btn:hover,
 .informacion-contacto a.icon-sup-no-btn:focus {
   background-color: var(--color-hover);
-  /* border-radius: 0.25rem; */
 }
 
 .enlaces-lista-header .icon-parking {
@@ -2870,11 +2847,6 @@ svg.icon-urgencia {
   .no-js .header-principal a.logo {
     display: block;
   }
-
-  /* a.telefono-urgencia,
-  a.direccion-map {
-    margin-left: 2rem;
-  } */
 }
 
 /*PÁGINAS LEGALES*/
@@ -2930,12 +2902,6 @@ svg.icon-ubicacion {
 .js .direccion-header {
   display: none;
 }
-/* .no-js .horario-completo-header {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1.5rem;
-} */
-
 .barra-separa1-header {
   display: none;
 }
@@ -2955,12 +2921,7 @@ svg.icon-ubicacion {
   font-weight: 600;
 } */
 @media (min-width: 600px) {
-  /* .no-js .horario-completo-header {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-} */
-  .no-js .nav-links {
+   .no-js .nav-links {
     margin-top: 3.75rem;
   }
 }
@@ -2997,22 +2958,6 @@ svg.icon-ubicacion {
 .no-js .header-superior {
   border-bottom: none;
 }
-/* .no-js .horario-completo-header {
-  margin-top: 2rem;
-} */
-/* @media (min-width:768px){
-   .no-js .horario-completo-header {
-  margin-top: 1rem;
-}
-} */
-@media (min-width: 1200px) {
-  /* .no-js .horario-completo-header {
-  margin-top: unset;
-} */
-}
-/* .descripcion {
-  font-weight: 500;
-} */
 .header-superior a.ubicacion-header:hover svg,
 .header-superior a.ubicacion-header:focus svg {
   color: var(--color-hover);
@@ -3034,3 +2979,22 @@ li.horario-header {
 .img2-nosotros {
   margin: 0 auto;
 }
+blockquote div.quote-cite img {
+  width: 2em;
+}
+a.link-footer:hover,
+a.link-footer:focus {
+  background-color: var(--color-hover);
+}
+/*PRUEBA -NAVEGACIÓN CON MAYOR ESPACIADO*/
+/* * {
+line-height: 1.5 !important;
+letter-spacing: 0.12em !important;
+word-spacing: 0.16em !important;
+}
+p {
+margin-bottom: 2em !important;
+} */
+
+
+ 
