@@ -2993,3 +2993,8 @@ word-spacing: 0.16em !important;
 p {
 margin-bottom: 2em !important;
 } */
+@media (min-widt:1200px){
+  .whatsapp-fijo {
+    right: 2.5rem;
+  }
+}
